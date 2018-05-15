@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetFile", "Log4NetFile\Log4NetFile.csproj", "{8C131EE5-7B7D-4F5A-8336-A11F8E02B7AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4NetOriginalSQL", "Log4NetOriginalSQL\Log4NetOriginalSQL.csproj", "{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C131EE5-7B7D-4F5A-8336-A11F8E02B7AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C131EE5-7B7D-4F5A-8336-A11F8E02B7AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C131EE5-7B7D-4F5A-8336-A11F8E02B7AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C131EE5-7B7D-4F5A-8336-A11F8E02B7AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
