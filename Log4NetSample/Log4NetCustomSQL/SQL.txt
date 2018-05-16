@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].Mylogger ( 
+[Id] [int] IDENTITY (1, 1) NOT NULL, 
+[TIMESTAMP] [datetime] NOT NULL, 
+[EventType] int NOT NULL, 
+[EventCategory] [varchar] (50) NOT NULL, 
+[Event_ID] int NOT NULL, 
+[ComputerName] [varchar] (50) NOT NULL, 
+[Mac_Address] [varchar] (50) NULL,
+[UserName] [varchar] (50) NULL,
+[SourceType] [varchar] (20) NULL,
+[Source] [varchar] (50) NULL,
+[Description] [varchar] (4000) NULL,
+[CollectDate] [datetime]  NULL,
+)

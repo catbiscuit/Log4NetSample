@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F0965E0C-238E-4878-A17A-A2BC41ACEC0D}</ProjectGuid>
+    <ProjectGuid>{AD13647D-611E-477F-8ECC-1189C703D3EA}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Log4NetOriginalSQL</RootNamespace>
-    <AssemblyName>Log4NetOriginalSQL</AssemblyName>
+    <RootNamespace>Log4NetCustomSQL</RootNamespace>
+    <AssemblyName>Log4NetCustomSQL</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -61,30 +61,31 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CustomSQLAppend.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="OriginalSQLAppend.aspx" />
     <Content Include="SQL.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="LogHelper.cs" />
-    <Compile Include="OriginalSQLAppend.aspx.cs">
-      <DependentUpon>OriginalSQLAppend.aspx</DependentUpon>
+    <Compile Include="Common\LogContent.cs" />
+    <Compile Include="Common\MyLayout.cs" />
+    <Compile Include="Common\MyMessagePatternConverter.cs" />
+    <Compile Include="CustomSQLAppend.aspx.cs">
+      <DependentUpon>CustomSQLAppend.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OriginalSQLAppend.aspx.designer.cs">
-      <DependentUpon>OriginalSQLAppend.aspx</DependentUpon>
+    <Compile Include="CustomSQLAppend.aspx.designer.cs">
+      <DependentUpon>CustomSQLAppend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LogHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="log4net.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="log4net.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,7 +108,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:10243/</IISUrl>
+          <IISUrl>http://localhost:3424/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

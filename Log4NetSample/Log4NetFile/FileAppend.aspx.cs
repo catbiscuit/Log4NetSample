@@ -16,7 +16,7 @@ namespace Log4NetFile
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
-            LogsManager.InfoLogWrite(DateTime.Now.ToString() + ":插入的内容\r\n");
+            LogHelper.InfoLogWrite(DateTime.Now.ToString() + ":插入的内容\r\n");
         }
     }
 }

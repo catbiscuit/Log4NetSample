@@ -4,11 +4,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
-namespace Log4NetOriginalSQL
+namespace Log4NetFile
 {
-    public class LogsManager
+    /// <summary>
+    /// Log4Net日志操作类
+    /// </summary>
+    public class LogHelper
     {
-        public LogsManager()
+        public LogHelper()
         { }
 
         /// <summary>

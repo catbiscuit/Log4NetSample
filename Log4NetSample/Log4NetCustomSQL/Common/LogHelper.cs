@@ -4,11 +4,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web;
 
-namespace Log4NetFile
+namespace Log4NetCustomSQL
 {
-    public class LogsManager
+    /// <summary>
+    /// Log4Net日志操作类
+    /// </summary>
+    public class LogHelper
     {
-        public LogsManager()
+        public LogHelper()
         { }
 
         /// <summary>
@@ -153,6 +156,16 @@ namespace Log4NetFile
             {
                 log.Debug(message, ex);
             }
+        }
+
+        /// <summary>
+        /// Info日志插入到数据库中
+        /// </summary>
+        /// <param name="message"></param>
+        public static void InfoLogInsert(object message)
+        {
+            log4net.ILog log = log4net.LogManager.GetLogger("sqlLogger");
+            log.Info(message);
         }
     }
 }
